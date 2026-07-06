@@ -22,3 +22,10 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+
+# Local demo data and generated outputs
+data/
+outputs/
+
+# Generated editable-install metadata
+src/*.egg-info/
