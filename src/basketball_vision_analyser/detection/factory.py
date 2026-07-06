@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from basketball_vision_analyser.detection.base_detector import BaseDetector
 from basketball_vision_analyser.detection.config import DetectorConfig
+from basketball_vision_analyser.detection.local_yolo_detector import LocalYOLODetector
 from basketball_vision_analyser.detection.mock_detector import MockDetector
 from basketball_vision_analyser.detection.types import DetectorBackend
 
@@ -14,6 +15,7 @@ class DetectorFactory:
 
     _registry: dict[DetectorBackend, type[BaseDetector]] = {
         DetectorBackend.MOCK: MockDetector,
+        DetectorBackend.LOCAL_YOLO: LocalYOLODetector,
     }
 
     @classmethod

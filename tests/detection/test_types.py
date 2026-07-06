@@ -5,6 +5,7 @@ from basketball_vision_analyser.detection import DetectionClass, DetectorBackend
 def test_detection_class_from_label_handles_aliases() -> None:
     assert DetectionClass.from_label("person") == DetectionClass.PLAYER
     assert DetectionClass.from_label("basketball") == DetectionClass.BALL
+    assert DetectionClass.from_label("sports ball") == DetectionClass.BALL
     assert DetectionClass.from_label("rim") == DetectionClass.HOOP
     assert DetectionClass.from_label("ref") == DetectionClass.REFEREE
     assert DetectionClass.from_label("game clock") == DetectionClass.CLOCK

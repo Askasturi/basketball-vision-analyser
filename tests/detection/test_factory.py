@@ -1,4 +1,3 @@
-
 import pytest
 
 from basketball_vision_analyser.detection import (
@@ -24,7 +23,7 @@ def test_detector_factory_creates_mock_detector_from_config() -> None:
 
 
 def test_detector_factory_raises_for_unregistered_backend() -> None:
-    config = DetectorConfig(backend=DetectorBackend.LOCAL_YOLO)
+    config = DetectorConfig(backend=DetectorBackend.ROBOFLOW_API)
 
     with pytest.raises(ValueError, match="No detector registered"):
         DetectorFactory.create(config)
