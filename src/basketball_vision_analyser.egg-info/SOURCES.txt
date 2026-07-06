@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/basketball_vision_analyser/__init__.py
+src/basketball_vision_analyser.egg-info/PKG-INFO
+src/basketball_vision_analyser.egg-info/SOURCES.txt
+src/basketball_vision_analyser.egg-info/dependency_links.txt
+src/basketball_vision_analyser.egg-info/requires.txt
+src/basketball_vision_analyser.egg-info/top_level.txt

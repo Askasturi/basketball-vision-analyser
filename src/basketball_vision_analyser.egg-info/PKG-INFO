@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: basketball-vision-analyser
+Version: 0.1.0
+Summary: Basketball video analysis system using YOLO, OpenCV, tracking, team assignment, possession detection, and tactical visualization.
+Author: Arjun Kasturi
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: opencv-python>=4.10.0
+Requires-Dist: python-dotenv>=1.0.1
+Provides-Extra: dev
+Requires-Dist: pytest>=9.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=7.0.0; extra == "dev"
+Requires-Dist: ruff>=0.15.0; extra == "dev"
+Requires-Dist: black>=26.0.0; extra == "dev"
+Requires-Dist: mypy>=2.0.0; extra == "dev"
+Provides-Extra: ai
+Requires-Dist: ultralytics>=8.3.0; extra == "ai"
+Requires-Dist: roboflow>=1.1.0; extra == "ai"
+Requires-Dist: inference-sdk>=0.9.0; extra == "ai"
+Requires-Dist: transformers>=4.45.0; extra == "ai"
+Requires-Dist: torch>=2.3.0; extra == "ai"
+Requires-Dist: pillow>=10.0.0; extra == "ai"
+
+
+# Basketball Vision Analyser
+
+Basketball Vision Analyser is a Python computer-vision project for analyzing basketball game footage.
+
+The goal is to detect players, the ball, hoop, referees, scoreboard, and clock; track players and ball across frames; assign teams; estimate possession; detect passes and interceptions; map player movement to a tactical court view; calculate speed and distance; and export annotated videos plus JSON/CSV analytics.
+
+## Planned Features
+
+- Video loading and output rendering with OpenCV
+- Local YOLO detection backend
+- Optional Roboflow API detection backend
+- Player and ball tracking
+- Team classification using jersey colors and optional FashionCLIP
+- Ball possession estimation
+- Pass and interception detection
+- Court keypoint detection and tactical top-down mapping
+- Speed and distance metrics
+- Annotated video export
+- Structured analytics export
+
+## Project Structure
+
+```text
+basketball-vision-analyser/
+├── src/
+│   └── basketball_vision_analyser/
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── test_package_import.py
+├── docs/
+├── examples/
+├── configs/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── models/
+│   ├── weights/
+│   └── checkpoints/
+├── outputs/
+│   ├── videos/
+│   └── reports/
+├── scripts/
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── .env.example
+└── .gitignore 
