@@ -36,3 +36,7 @@ outputs/
 
 # Generated editable-install metadata
 src/*.egg-info/
+
+# Local videos and generated outputs
+data/
+outputs/
