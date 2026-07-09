@@ -40,3 +40,9 @@ src/*.egg-info/
 # Local videos and generated outputs
 data/
 outputs/
+
+# Local videos, model weights, and generated outputs
+data/
+outputs/
+*.pt
+src/*.egg-info/
