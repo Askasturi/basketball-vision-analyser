@@ -29,3 +29,10 @@ outputs/
 
 # Generated editable-install metadata
 src/*.egg-info/
+
+# Local demo data and generated outputs
+data/
+outputs/
+
+# Generated editable-install metadata
+src/*.egg-info/
